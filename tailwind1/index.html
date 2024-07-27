@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>tailwind css</title>
+</head>
+<body>
+
+    <nav class="flex p-3 bg-white justify-between items-center">
+        <a href="#" id="brand" class="flex gap-2 items-center">
+            <img src="./assets/asset 0.png" alt="logo" class="object-cover max-w-12 max-h-12">
+            <span class="text-lg font-medium font-display">ToDesktop</span>
+        </a>
+
+        <div class="font-medium flex gap-x-12 justify-center">
+            <a href="#" class="hover:text-primary">Pricing</a>
+            <a href="#" class="hover:text-primary">Docs</a>
+            <a href="#" class="hover:text-primary">Changelog</a>
+            <a href="#" class="hover:text-primary">Blogs</a>
+            <a href="#" class="hover:text-primary">Login</a>
+        </div>
+
+        <button class="hidden md:flex items-center gap-2 border border-1 border-gray-400 px-4 py-2 rounded-lg hover:border-gray-700">
+            <img src="assets/asset 1.svg" alt="logo">
+            <span>Electron Developer</span>
+            <i class="fa fa-thin fa-arrow-right"></i>
+        </button>
+
+        <button class="p-2 md:hidden" onclick= handleMenu()>
+            <i class="fa fa-thin fa-arrow-right"></i>
+        </button>
+    </nav>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
